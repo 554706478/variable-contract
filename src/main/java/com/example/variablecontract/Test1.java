@@ -48,7 +48,12 @@ public class Test1 {
         map.put("${VariableParameter21}", "变量值姓名甲");
         map.put("${VariableParameter22}", "变量值姓名乙");
         String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\合同样本.doc";
+        long startMillis = System.currentTimeMillis();
+        System.out.println("开始执行前时间毫秒数："+startMillis);
         readwriteWord(srcPath, map);
+        long endMillis = System.currentTimeMillis();
+        System.out.println("执行完毕后时间毫秒数："+endMillis);
+        System.out.println("合同参数置换用时毫秒数："+(endMillis-startMillis));
         System.out.println("---------------新合同生成完毕---------------");
     }
 
