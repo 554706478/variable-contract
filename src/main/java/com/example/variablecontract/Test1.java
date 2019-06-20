@@ -22,6 +22,7 @@ public class Test1 {
 //        map.put("${FEE}", "王五");
 //        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\aa.doc";
 //        readwriteWord(srcPath, map);
+//        System.out.println("---------------新合同生成完毕---------------");
 
         //合同样例二
         map.put("${VariableParameter1}", "参数值1");
@@ -48,6 +49,7 @@ public class Test1 {
         map.put("${VariableParameter22}", "参数值表格2");
         String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\合同样本.doc";
         readwriteWord(srcPath, map);
+        System.out.println("---------------新合同生成完毕---------------");
     }
 
     /**
@@ -71,11 +73,6 @@ public class Test1 {
         } catch (IOException e1) {
             e1.printStackTrace();
         }
-//        Fields fields = hdt.getFields();
-//        Iterator<Field> it = fields.getFields(FieldsDocumentPart.MAIN).iterator();
-//        while (it.hasNext()) {
-//            System.out.println(it.next().getType());
-//        }
 
         //读取word文本内容
         Range range = hdt.getRange();
@@ -85,7 +82,7 @@ public class Test1 {
         while (tableIt.hasNext()) {
             Table tb = (Table) tableIt.next();
             ii++;
-            System.out.println("第" + ii + "个表格数据...................");
+//            System.out.println("第" + ii + "个表格数据...................");
             //迭代行，默认从0开始
             for (int i = 0; i < tb.numRows(); i++) {
                 TableRow tr = tb.getRow(i);
@@ -100,7 +97,7 @@ public class Test1 {
                     for (int k = 0; k < td.numParagraphs(); k++) {
                         Paragraph para = td.getParagraph(k);
                         String s = para.text();
-                        System.out.println(s);
+//                        System.out.println(s);
                     }
                 }
             }
@@ -111,16 +108,12 @@ public class Test1 {
         for (Map.Entry<String, String> entry : map.entrySet()) {
             range.replaceText(entry.getKey(), entry.getValue());
         }
-//        // 替换内容
-//        for (Map.Entry<String, String> entry : contentMap.entrySet()) {
-//            bodyRange.replaceText("${" + entry.getKey() + "}", entry.getValue());
-//        }
         ByteArrayOutputStream ostream = new ByteArrayOutputStream();
         String fileName = "" + System.currentTimeMillis();
         fileName += ".doc";
         FileOutputStream out = null;
         try {
-            out = new FileOutputStream("F:/" + fileName, true);
+            out = new FileOutputStream("C:\\Users\\Administrator\\Desktop\\合同文档\\" + fileName, true);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
