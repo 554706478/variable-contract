@@ -19,7 +19,7 @@ public class Test1 {
         //合同样例一
 //        map.put("${PARTY_A}", "张三");
 //        map.put("${MONEY}", "100");
-//        map.put("${FEE}", "5");
+//        map.put("${FEE}", "5%");
 //        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\aa.doc";
 //        readwriteWord(srcPath, map);
 //        System.out.println("---------------新合同生成完毕---------------");
