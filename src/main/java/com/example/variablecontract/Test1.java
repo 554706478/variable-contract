@@ -20,7 +20,7 @@ public class Test1 {
 //        map.put("${PARTY_A}", "张三");
 //        map.put("${MONEY}", "100");
 //        map.put("${FEE}", "5%");
-//        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\aa.doc";
+//        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档云打印调研材料\\aa.doc";
 //        readwriteWord(srcPath, map);
 //        System.out.println("---------------新合同生成完毕---------------");
 
@@ -47,7 +47,7 @@ public class Test1 {
         map.put("${VariableParameter20}", "变量值20");
         map.put("${VariableParameter21}", "变量值姓名甲");
         map.put("${VariableParameter22}", "变量值姓名乙");
-        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\合同样本.doc";
+        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档云打印调研材料\\合同样本.doc";
         long startMillis = System.currentTimeMillis();
         System.out.println("开始执行前时间毫秒数："+startMillis);
         readwriteWord(srcPath, map);

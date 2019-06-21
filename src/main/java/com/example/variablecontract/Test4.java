@@ -19,8 +19,8 @@ public class Test4 {
 //        map.put("${PARTY_A}", "张三");
 //        map.put("${MONEY}", "李四");
 //        map.put("${FEE}", "王五");
-//        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\aa.docx";
-//        String destPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\bb.docx";
+//        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档云打印调研材料\\aa.docx";
+//        String destPath = "C:\\Users\\Administrator\\Desktop\\合同文档云打印调研材料\\bb.docx";
 //        searchAndReplace(srcPath, destPath, map);
 
         //合同样例二
@@ -46,8 +46,8 @@ public class Test4 {
         map.put("${VariableParameter20}", "变量值20");
         map.put("${VariableParameter21}", "变量值表格1");
         map.put("${VariableParameter22}", "变量值表格2");
-        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\合同样本.docx";
-        String destPath = "C:\\Users\\Administrator\\Desktop\\合同文档\\合同样本bb.docx";
+        String srcPath = "C:\\Users\\Administrator\\Desktop\\合同文档云打印调研材料\\合同样本.docx";
+        String destPath = "C:\\Users\\Administrator\\Desktop\\合同文档云打印调研材料\\合同样本bb.docx";
         searchAndReplace(srcPath, destPath, map);
     }
 
