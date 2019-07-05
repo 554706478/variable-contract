@@ -18,6 +18,7 @@ public class Test2 {
 
     public static void main(String[] args) {
         Test2 test = new Test2();
+        System.out.println(test);
         Map<String, Object> param = new HashMap<String, Object>();
         List<String> keyList = new ArrayList<String>();
         List<Object> valueList = new ArrayList<Object>();
