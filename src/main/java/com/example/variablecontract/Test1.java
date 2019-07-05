@@ -17,6 +17,7 @@ public class Test1 {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<String, String>();
         System.out.println(map);
+        System.out.println(map);
         //合同样例一
 //        map.put("${PARTY_A}", "张三");
 //        map.put("${MONEY}", "100");
