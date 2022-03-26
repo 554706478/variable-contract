@@ -32,6 +32,8 @@ public class Test1 {
 
 
 
+
+
         //合同样例二
         map.put("${VariableParameter1}", "变量值1");
         map.put("${VariableParameter2}", "变量值2");
