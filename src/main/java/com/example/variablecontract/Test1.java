@@ -26,6 +26,8 @@ public class Test1 {
 //        readwriteWord(srcPath, map);
 //        System.out.println("---------------新合同生成完毕---------------");
 
+
+
         //合同样例二
         map.put("${VariableParameter1}", "变量值1");
         map.put("${VariableParameter2}", "变量值2");
